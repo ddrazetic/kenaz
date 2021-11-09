@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  margin: 0px;
+}
+
+.containerNav {
+  background-color: #252525;
+  width: 100%;
+  min-height: 53px;
+}
+
+.containerNav .navigation {
+  max-width: 940px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.containerNav .navigation .leftPartNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.containerNav .navigation .leftPartNav .leftArrowNav {
+  height: 53px;
+  width: 63px;
+  background-color: rgba(255, 255, 255, 0.05);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: 9px;
+}
+
+.containerNav .navigation .leftPartNav p {
+  color: #fff;
+  margin-top: 16.5px;
+  font-family: 'Bitter', serif;
+  font-size: 24px;
+}
+
+.containerNav .navigation .rightPartNav {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.containerNav .navigation .rightPartNav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 14.5px;
+  font-size: 14px;
+  color: #fff;
+  font-family: 'Varela Round', sans-serif;
+  line-height: 27px;
+  font-weight: 400;
+}
+
+.containerNav .navigation .rightPartNav ul li {
+  margin-right: 28px;
+}
+
+.containerNav .navigation .rightPartNav .rightSearchNav {
+  height: 53px;
+  width: 63px;
+  background-color: rgba(221, 208, 208, 0.05);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.containerNav .navigation .rightPartNav .rightSearchNav img {
+  width: 16px;
+  height: 16px;
+}
+
+.purpleNav {
+  background-color: #4D4382;
+}
+
+.purpleNav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-family: 'Bitter', serif;
+  font-weight: 700;
+  font-size: 18px;
+  font-style: bold;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.purpleNav ul li {
+  padding: 11px 0px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.purpleNav ul li:nth-child(1) {
+  background-color: #299EC3;
+  padding: 15px 21px 16px 20px;
+}
+
+.purpleNav ul li:nth-child(2)::after {
+  content: '';
+  width: 132px;
+  height: 6px;
+  background-color: #EE6151;
+  margin-top: auto;
+}
+
+.purpleNav ul li:nth-child(3)::after {
+  content: '';
+  width: 100px;
+  height: 6px;
+  background-color: #84C14F;
+  margin-top: auto;
+}
+
+.purpleNav ul li:nth-child(4)::after {
+  content: '';
+  width: 81px;
+  height: 6px;
+  background-color: #5DCFF3;
+  margin-top: auto;
+}
+
+.purpleNav ul li:nth-child(5)::after {
+  content: '';
+  width: 91px;
+  height: 6px;
+  background-color: #FCC44D;
+  margin-top: auto;
+}
+
+.purpleNav ul li:nth-child(6)::after {
+  content: '';
+  width: 113px;
+  height: 6px;
+  background-color: #A99765;
+  margin-top: auto;
+}
+
+@media screen and (max-width: 780px) {
+  .purpleNav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+  }
+  .navigation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=App.css.map */

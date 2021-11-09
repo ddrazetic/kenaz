@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+    margin: 0px
+.containerNav
+    background-color: #252525
+    width: 100%
+    min-height: 53px
+    .navigation
+        //background-color: #ad1c1c
+        max-width: 940px
+        margin: 0 auto
+        display: flex
+        
+        .leftPartNav
+            display: flex
+            flex-direction: row
+            .leftArrowNav 
+                height: 53px
+                width: 63px
+                background-color: rgba(255, 255, 255, 0.05)
+                display: flex
+                align-content: center
+                justify-content: center
+                flex-wrap: wrap
+                margin-right: 9px
+            p
+                color: #fff
+                margin-top: 16.5px
+                font-family: 'Bitter', serif
+                font-size: 24px
+        .rightPartNav
+             margin-left: auto
+             display: flex
+             ul
+                 list-style-type: none
+                 display: flex
+                 flex-direction: row
+                 margin-top: 14.5px
+                 font-size: 14px
+                 color: #fff
+                 font-family: 'Varela Round', sans-serif
+                 line-height: 27px
+                 font-weight: 400
+                 li 
+                     margin-right: 28px
+             .rightSearchNav
+                height: 53px
+                width: 63px
+                background-color: rgba(221, 208, 208, 0.05)
+                display: flex
+                align-content: center
+                justify-content: center
+                flex-wrap: wrap
+                img
+                    width: 16px
+                    height: 16px
+.purpleNav
+    background-color: #4D4382
+    ul
+        list-style-type: none
+        display: flex
+        flex-direction: row
+        font-family: 'Bitter', serif
+        font-weight: 700
+        font-size: 18px
+        font-style: bold
+        text-transform: uppercase
+        color: #fff
+        li
+            padding: 11px 0px 0px 0px 
+            display: flex
+            flex-direction: column
+            align-items: center
+        li:nth-child(1) 
+            background-color: #299EC3
+            padding: 15px 21px 16px 20px
+        li:nth-child(2)::after
+            content: ''
+            width: 132px
+            height: 6px
+            background-color: #EE6151
+            margin-top: auto
+        li:nth-child(3)::after
+            content: ''
+            width: 100px
+            height: 6px
+            background-color:#84C14F
+            margin-top: auto
+        li:nth-child(4)::after
+            content: ''
+            width: 81px
+            height: 6px
+            background-color: #5DCFF3
+            margin-top: auto
+        li:nth-child(5)::after
+            content: ''
+            width: 91px
+            height: 6px
+            background-color: #FCC44D
+            margin-top: auto
+        li:nth-child(6)::after
+            content: ''
+            width: 113px
+            height: 6px
+            background-color: #A99765
+            margin-top: auto
+
+
+
+
+@media screen and (max-width: 780px)
+    .purpleNav ul
+        flex-direction: column
+        margin: 0 auto
+    .navigation
+        flex-direction: column
+
+
+
+
+
+                    
+                    
+                    
+                
+    
+    
+  
