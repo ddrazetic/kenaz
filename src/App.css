@@ -331,4 +331,173 @@
 .slick-next:hover {
   opacity: 0.7;
 }
+
+.twoColumnsDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.twoColumnsDiv .newsbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 17px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.twoColumnsDiv .newsbar .section {
+  margin-top: 19px;
+  height: 325px;
+  padding-right: 31px;
+  background-color: white;
+  border-left: solid 13px #3677B5;
+  margin-top: 19px;
+}
+
+.twoColumnsDiv .newsbar .section .sectionHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.twoColumnsDiv .newsbar .section .sectionHeader h3 {
+  font-family: "Bitter", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 29px;
+  margin-top: 15px;
+  margin-left: 31px;
+}
+
+.twoColumnsDiv .newsbar .section .sectionHeader a {
+  font-family: "Varela Round", sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  color: #3677B5;
+  margin-left: auto;
+  margin-right: 32px;
+  margin-top: 32px;
+  -webkit-text-decoration-color: rgba(54, 119, 181, 0.3);
+          text-decoration-color: rgba(54, 119, 181, 0.3);
+}
+
+.twoColumnsDiv .newsbar .section .sectionArticles {
+  margin-top: 30px;
+  margin-left: 31px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 20px;
+}
+
+.twoColumnsDiv .newsbar .section .sectionArticles .article {
+  width: 170px;
+}
+
+.twoColumnsDiv .newsbar .section .sectionArticles .article img {
+  width: 170px;
+  height: 128px;
+}
+
+.twoColumnsDiv .newsbar .section .sectionArticles .article .imageBusiness {
+  width: 120px;
+  height: 90px;
+}
+
+.twoColumnsDiv .newsbar .section .sectionArticles .article .articleDate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 6px;
+}
+
+.twoColumnsDiv .newsbar .section .sectionArticles .article .articleDate p {
+  font-family: "Varela Round", sans-serif;
+  font-style: regular;
+  font-size: 12px;
+  color: #666666;
+}
+
+.twoColumnsDiv .newsbar .section .sectionArticles .article .articleDate .articleNumber {
+  margin-left: auto;
+}
+
+.twoColumnsDiv .newsbar .section .sectionArticles .article h4 {
+  font-family: "Bitter", serif;
+  font-weight: 700;
+  font-size: 14.5px;
+  line-height: 18px;
+  font-style: normal;
+  margin-top: 6px;
+}
+
+.twoColumnsDiv .newsbar .section .sectionArticles .articleBusiness {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 135px 150px;
+      grid-template-columns: 135px 150px;
+}
+
+.twoColumnsDiv .newsbar .section .sectionBusiness {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.twoColumnsDiv .sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 303px;
+}
+
+.twoColumnsDiv .sidebar .topPopular {
+  width: 100%;
+  height: 667px;
+  margin-top: 19px;
+  background-color: #4D4382;
+}
+
+@media screen and (max-width: 950px) {
+  .twoColumnsDiv {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .twoColumnsDiv .sidebar {
+    margin: 0 auto;
+  }
+  .twoColumnsDiv .newsbar {
+    margin: 0 auto;
+  }
+}
 /*# sourceMappingURL=App.css.map */
