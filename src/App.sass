@@ -1,25 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap')
+
+$bitterFont: 'Bitter', serif
+$varelaFont: 'Varela Round', sans-serif
 
 *
     box-sizing: border-box
     margin: 0
     padding: 0
     margin: 0px
+h3,h4
+    color: rgba(54, 63, 72, 1)
+
+// NAVIGACIJSKA TRAKA
 .containerNav
     background-color: #252525
     width: 100%
     min-height: 53px
     .navigation
-        //background-color: #ad1c1c
         max-width: 940px
         margin: 0 auto
         display: flex
-        
         .leftPartNav
             display: flex
             flex-direction: row
-            .leftArrowNav 
+            .leftArrowNav
                 height: 53px
                 width: 63px
                 background-color: rgba(255, 255, 255, 0.05)
@@ -34,21 +39,21 @@
                 font-family: 'Bitter', serif
                 font-size: 24px
         .rightPartNav
-             margin-left: auto
-             display: flex
-             ul
-                 list-style-type: none
-                 display: flex
-                 flex-direction: row
-                 margin-top: 14.5px
-                 font-size: 14px
-                 color: #fff
-                 font-family: 'Varela Round', sans-serif
-                 line-height: 27px
-                 font-weight: 400
-                 li 
-                     margin-right: 28px
-             .rightSearchNav
+            margin-left: auto
+            display: flex
+            ul
+                list-style-type: none
+                display: flex
+                flex-direction: row
+                margin-top: 14.5px
+                font-size: 14px
+                color: #fff
+                font-family: 'Varela Round', sans-serif
+                line-height: 27px
+                font-weight: 400
+                li
+                    margin-right: 28px
+            .rightSearchNav
                 height: 53px
                 width: 63px
                 background-color: rgba(221, 208, 208, 0.05)
@@ -72,46 +77,43 @@
         text-transform: uppercase
         color: #fff
         li
-            padding: 11px 0px 0px 0px 
+            padding: 11px 0px 0px 0px
             display: flex
             flex-direction: column
             align-items: center
-        li:nth-child(1) 
+        li:nth-child(1)
             background-color: #299EC3
             padding: 15px 21px 16px 20px
         li:nth-child(2)::after
             content: ''
             width: 132px
-            height: 6px
+            height: 3px
             background-color: #EE6151
             margin-top: auto
         li:nth-child(3)::after
             content: ''
             width: 100px
-            height: 6px
-            background-color:#84C14F
+            height: 3px
+            background-color: #84C14F
             margin-top: auto
         li:nth-child(4)::after
             content: ''
             width: 81px
-            height: 6px
+            height: 3px
             background-color: #5DCFF3
             margin-top: auto
         li:nth-child(5)::after
             content: ''
             width: 91px
-            height: 6px
+            height: 3px
             background-color: #FCC44D
             margin-top: auto
         li:nth-child(6)::after
             content: ''
             width: 113px
-            height: 6px
+            height: 3px
             background-color: #A99765
             margin-top: auto
-
-
-
 
 @media screen and (max-width: 780px)
     .purpleNav ul
@@ -120,14 +122,379 @@
     .navigation
         flex-direction: column
 
+//NASLOVNICA
 
+.mainContainer
+    max-width: 940px
+    margin: 0 auto
 
+.banner
+    background-color: #ffffff
+    width: 100%
+    margin-top: 16px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    border: solid 1px #D7D7D7
+    p
+        color: #999999
+        font-family: 'Varela Round', sans-serif
+        font-size: 14px
+        line-height: 17px
 
+.bigBanner
+    height: 120px
 
-                    
-                    
-                    
-                
-    
-    
-  
+//Glavni slider
+
+.mainSlider
+    width: 100%
+    height: 425px
+    background-color: #fff
+    margin-top: 18px
+    .item
+        min-height: 425px
+        background-image: url("./components/assets/news_photo.png")
+        background-size: cover
+        background-repeat: no-repeat
+        &> *
+            margin-left: 30px
+
+        .dateAndComments
+            font-family: 'Varela Round', sans-serif
+            font-weight: 400
+            font-size: 12px
+            line-height: 14px
+            color: #EEF6FA
+            display: flex
+            flex-direction: row
+            margin-top: 246px
+            margin-bottom: 10px
+            p
+                font-weight: normal
+                color: #EEF6FA
+                margin-right: 28px
+            img
+                margin-right: 6px
+        h1
+            font-family: 'Bitter', serif
+            color: #EEF6FA
+            font-weight: 700
+            font-size: 34px
+            line-height: 43px
+            max-width: 588px
+
+        button
+            width: 123px
+            height: 33px
+            margin-top: 18px
+            background: rgba(0, 0, 0, 0.0001)
+            border: solid #fff 1px
+            line-height: 17px
+            font-family: 'Varela Round', sans-serif
+            color: #EEF6FA
+
+//za strijelice glavni slider
+.slick-prev
+    left: 25px
+    z-index: 999
+    width: 36px
+    height: 53px
+    background: url("./components/assets/arrowLeft.png") no-repeat !important
+    &::before
+        display: none
+    &:hover
+        opacity: 0.7
+
+.slick-next
+    right: 25px
+    width: 36px
+    height: 53px
+    z-index: 999
+    background: url("./components/assets/arrowRight.png") no-repeat !important
+    &::before
+        display: none
+    &:hover
+        opacity: 0.7
+
+//sekcije
+.twoColumnsDiv
+    display: flex
+    flex-direction: row
+    .newsbar
+        display: flex
+        flex-direction: column
+        margin-right: 17px
+        max-width: 100%
+        overflow: hidden
+        .containerLocalNews
+            display: flex
+            flex-direction: row
+            gap: 24px
+        .section
+            overflow: hidden
+            margin-top: 19px
+            max-width: 620px
+            min-height: 325px
+            padding-right: 31px
+            background-color: white
+            border-left: solid 13px #3677B5
+            margin-top: 19px
+            .sectionHeader
+                display: flex
+                flex-direction: row
+                div
+                    margin-left: auto
+                    margin-top: 28px
+
+                    img
+                        height: 22px
+                        width: 16px
+                        margin-left: 14px
+                        &:hover
+                            opacity: 0.7
+
+                h3
+                    font-family: $bitterFont
+                    font-weight: 700
+                    font-style: normal
+                    font-size: 24px
+                    line-height: 29px
+                    margin-top: 15px
+                    margin-left: 31px
+
+                a
+                    font-family: $varelaFont
+                    font-size: 14px
+                    line-height: 17px
+                    color: #3677B5
+                    margin-left: auto
+
+                    margin-top: 32px
+                    text-decoration-color: rgba(54, 119, 181, 0.3)
+
+            .sectionArticles
+                margin-top: 30px
+                margin-left: 31px
+                display: flex
+                flex-direction: row
+                gap: 20px
+                .article
+                    width: 170px
+                    img
+                        width: 170px
+                        height: 128px
+                    .imageBusiness
+                        width: 120px
+                        height: 90px
+                    .imageCarousel
+                        width: 260px
+                        height: 150px
+
+                    .articleDate
+                        display: flex
+                        flex-direction: row
+                        margin-top: 6px
+                        p
+                            font-family: $varelaFont
+                            font-style: regular
+                            font-size: 12px
+                            color: #666666
+                        .articleNumber
+                            margin-left: auto
+
+                    h4
+                        font-family: $bitterFont
+                        font-weight: 700
+                        font-size: 14.5px
+                        line-height: 18px
+                        font-style: normal
+                        margin-top: 6px
+                .articleBusiness
+                    display: grid
+                    grid-template-columns: 135px 150px
+                .articleCarousel
+                    width: 260px
+
+            .sectionBusiness
+                display: grid
+                grid-template-columns: 1fr 1fr
+    .sidebar
+        display: flex
+        flex-direction: column
+        width: 303px
+
+        .topPopular
+            width: 100%
+            height: 667px
+            margin-top: 19px
+            background-color: #4D4382
+            .topPopularHeader
+                padding-top: 18px
+                padding-bottom: 21px
+                display: flex
+                flex-direction: row
+                justify-content: center
+                gap: 20px
+                font-family: $varelaFont
+                font-size: 14px
+                background-color: rgba(0, 0, 0, 0.2)
+
+                p
+                    color: #fff
+                    text-decoration: underline
+                    text-decoration-color: rgba(172, 179, 186, 0.3)
+                    text-underline-offset: 3px
+                    cursor: pointer
+                .active
+                    color: rgba(252, 196, 77, 1)
+                    text-decoration-color: rgba(252, 196, 77, 0.3)
+            .articleTopPopular
+                display: flex
+                padding: 20px 32px
+                border-bottom: solid 2px rgba(0, 0, 0, 0.2)
+                cursor: pointer
+                &:hover
+                    background-color: rgba(0, 0, 0, 0.1)
+
+                .textTopPopular
+                    img
+                        height: 10px
+                        float: right
+                        margin-right: 3px
+
+                    p
+                        color: rgba(172, 179, 186, 1)
+                        font-family: $varelaFont
+                        font-size: 10px
+                        line-height: 12px
+                        margin-top: 15px
+                    .pToRight
+                        float: right
+                        margin-right: 25px
+                        margin-top: 0
+
+                    h3
+                        font-family: $bitterFont
+                        color: #fff
+                        font-weight: 700
+                        font-size: 14px
+                        font-style: normal
+                        line-height: 22px
+                        letter-spacing: 1px
+                .imgTopPopular
+                    width: 72px
+                    height: 72px
+                    border: solid 2px #fff
+        .social
+            margin-top: 28px
+            h3
+                font-family: $bitterFont
+                font-size: 24px
+                line-height: 24px
+                margin-bottom: 15px
+                color: rgba(54, 63, 72, 1)
+
+            .socialNetwork
+                display: flex
+                margin-bottom: 7px
+                img
+                    height: 40px
+                    width: 40px
+                p
+                    width: 123px
+                    background-color: #DDDDDD
+                    font-family: $bitterFont
+                    font-weight: 700
+                    font-style: bold
+                    size: 18px
+                    padding-top: 13px
+                    padding-left: 15px
+                    color: rgba(54, 63, 72, 1)
+                .numberOfPeople
+                    width: 142px
+                    background-color: #4D4382
+                    font-family: $varelaFont
+                    font-weight: 400
+                    font
+                    font-size: 14px
+                    color: white
+        .kenazTv
+            height: 324px
+            background-color: #fff
+            margin-top: 10px
+            h3
+                font-family: $bitterFont
+                font-size: 24px
+                margin-top: 15px
+                margin-left: 33px
+                margin-bottom: 31px
+            p
+                font-family: $varelaFont
+                font-size: 12px
+                color: #666666
+                margin-left: 32px
+                margin-top: 17px
+                margin-bottom: 7px
+            h4
+                font-family: $bitterFont
+                font-size: 14px
+                margin-left: 32px
+                letter-spacing: 0.5px
+        .twoBanners
+            display: flex
+            gap: 9px
+            margin-top: 18px
+            width: 100%
+            height: 167px
+            background-color: #DDDDDD
+            padding-top: 19px
+            padding-left: 21px
+            div
+                width: 128px
+                height: 128px
+                display: flex
+                flex-direction: column
+                background-color: white
+                align-items: center
+                justify-content: center
+                border: 1px solid rgba(215, 215, 215, 1)
+
+                p
+                    color: #999999
+                    font-family: 'Varela Round', sans-serif
+                    font-size: 14px
+                    line-height: 17px
+        .commentsSection
+            width: 100%
+            height: 556px
+            background-color: white
+            margin-top: 22px
+            padding-top: 15px
+            padding-left: 17px
+
+//responzivnost
+
+@media screen and (max-width: 950px)
+    .twoColumnsDiv
+        justify-content: center
+
+    .sectionArticles
+        flex-direction: column !important
+
+    .section
+        width: 340px
+        margin: 0 auto
+        padding-bottom: 10px
+    .containerLocalNews
+        display: flex
+        flex-direction: column !important
+
+    .sectionBusiness
+        grid-template-columns: 1fr !important
+@media screen and (max-width: 680px)
+    .twoColumnsDiv
+        flex-direction: column
+    .sidebar
+        margin: 0 auto
