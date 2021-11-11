@@ -3,7 +3,7 @@ import articlePhoto from "./assets/article.png";
 const Article = ({ date, number, header }) => {
   return (
     <div className="article">
-      <img src={articlePhoto}></img>
+      <img src={articlePhoto} alt="article"></img>
       <div className="articleDate">
         <p>{date}</p>
         <p className="articleNumber">{number}</p>

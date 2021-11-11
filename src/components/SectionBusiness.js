@@ -8,27 +8,27 @@ const SectionBusiness = ({ title, colorShadow, numberZero }) => {
     >
       <div className="sectionHeader">
         <h3>{title}</h3>
-        <a href="">See all</a>
+        <a href="https://www.w3schools.com/">See all</a>
       </div>
       <div className="sectionArticles sectionBusiness">
         <ArticleBusiness
           date="August 26, 2013"
-          number={numberZero ? "" : "14"}
+          number={numberZero ? "14" : ""}
           header="For Obama, MLK's shadow looms large ahead of speech"
         />
         <ArticleBusiness
           date="August 26, 2013"
-          number={numberZero ? "" : "14"}
+          number={numberZero ? "14" : ""}
           header="For Obama, MLK's shadow looms large ahead of speech"
         />
         <ArticleBusiness
           date="August 26, 2013"
-          number={numberZero ? "" : "14"}
+          number={numberZero ? "14" : ""}
           header="For Obama, MLK's shadow looms large ahead of speech"
         />
         <ArticleBusiness
           date="August 26, 2013"
-          number={numberZero ? "" : "14"}
+          number={numberZero ? "14" : ""}
           header="For Obama, MLK's shadow looms large ahead of speech"
         />
       </div>

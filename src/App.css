@@ -8,6 +8,10 @@
   margin: 0px;
 }
 
+h3, h4 {
+  color: #363f48;
+}
+
 .containerNav {
   background-color: #252525;
   width: 100%;
@@ -274,6 +278,7 @@
 
 .mainSlider .item .dateAndComments p {
   font-weight: normal;
+  color: #EEF6FA;
   margin-right: 28px;
 }
 
@@ -321,6 +326,7 @@
   right: 25px;
   width: 36px;
   height: 53px;
+  z-index: 999;
   background: url("./components/assets/arrowRight.png") no-repeat !important;
 }
 
@@ -355,9 +361,22 @@
   overflow: hidden;
 }
 
+.twoColumnsDiv .newsbar .containerLocalNews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 24px;
+}
+
 .twoColumnsDiv .newsbar .section {
+  overflow: hidden;
   margin-top: 19px;
-  height: 325px;
+  max-width: 620px;
+  min-height: 325px;
   padding-right: 31px;
   background-color: white;
   border-left: solid 13px #3677B5;
@@ -372,6 +391,21 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+.twoColumnsDiv .newsbar .section .sectionHeader div {
+  margin-left: auto;
+  margin-top: 28px;
+}
+
+.twoColumnsDiv .newsbar .section .sectionHeader div img {
+  height: 22px;
+  width: 16px;
+  margin-left: 14px;
+}
+
+.twoColumnsDiv .newsbar .section .sectionHeader div img:hover {
+  opacity: 0.7;
 }
 
 .twoColumnsDiv .newsbar .section .sectionHeader h3 {
@@ -390,7 +424,6 @@
   line-height: 17px;
   color: #3677B5;
   margin-left: auto;
-  margin-right: 32px;
   margin-top: 32px;
   -webkit-text-decoration-color: rgba(54, 119, 181, 0.3);
           text-decoration-color: rgba(54, 119, 181, 0.3);
@@ -421,6 +454,11 @@
 .twoColumnsDiv .newsbar .section .sectionArticles .article .imageBusiness {
   width: 120px;
   height: 90px;
+}
+
+.twoColumnsDiv .newsbar .section .sectionArticles .article .imageCarousel {
+  width: 260px;
+  height: 150px;
 }
 
 .twoColumnsDiv .newsbar .section .sectionArticles .article .articleDate {
@@ -461,6 +499,10 @@
       grid-template-columns: 135px 150px;
 }
 
+.twoColumnsDiv .newsbar .section .sectionArticles .articleCarousel {
+  width: 260px;
+}
+
 .twoColumnsDiv .newsbar .section .sectionBusiness {
   display: -ms-grid;
   display: grid;
@@ -486,17 +528,253 @@
   background-color: #4D4382;
 }
 
+.twoColumnsDiv .sidebar .topPopular .topPopularHeader {
+  padding-top: 18px;
+  padding-bottom: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  font-family: "Varela Round", sans-serif;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.twoColumnsDiv .sidebar .topPopular .topPopularHeader p {
+  color: #fff;
+  text-decoration: underline;
+  -webkit-text-decoration-color: rgba(172, 179, 186, 0.3);
+          text-decoration-color: rgba(172, 179, 186, 0.3);
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+
+.twoColumnsDiv .sidebar .topPopular .topPopularHeader .active {
+  color: #fcc44d;
+  -webkit-text-decoration-color: rgba(252, 196, 77, 0.3);
+          text-decoration-color: rgba(252, 196, 77, 0.3);
+}
+
+.twoColumnsDiv .sidebar .topPopular .articleTopPopular {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 32px;
+  border-bottom: solid 2px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.twoColumnsDiv .sidebar .topPopular .articleTopPopular:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.twoColumnsDiv .sidebar .topPopular .articleTopPopular .textTopPopular img {
+  height: 10px;
+  float: right;
+  margin-right: 3px;
+}
+
+.twoColumnsDiv .sidebar .topPopular .articleTopPopular .textTopPopular p {
+  color: #acb3ba;
+  font-family: "Varela Round", sans-serif;
+  font-size: 10px;
+  line-height: 12px;
+  margin-top: 15px;
+}
+
+.twoColumnsDiv .sidebar .topPopular .articleTopPopular .textTopPopular .pToRight {
+  float: right;
+  margin-right: 25px;
+  margin-top: 0;
+}
+
+.twoColumnsDiv .sidebar .topPopular .articleTopPopular .textTopPopular h3 {
+  font-family: "Bitter", serif;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 22px;
+  letter-spacing: 1px;
+}
+
+.twoColumnsDiv .sidebar .topPopular .articleTopPopular .imgTopPopular {
+  width: 72px;
+  height: 72px;
+  border: solid 2px #fff;
+}
+
+.twoColumnsDiv .sidebar .social {
+  margin-top: 28px;
+}
+
+.twoColumnsDiv .sidebar .social h3 {
+  font-family: "Bitter", serif;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 15px;
+  color: #363f48;
+}
+
+.twoColumnsDiv .sidebar .social .socialNetwork {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 7px;
+}
+
+.twoColumnsDiv .sidebar .social .socialNetwork img {
+  height: 40px;
+  width: 40px;
+}
+
+.twoColumnsDiv .sidebar .social .socialNetwork p {
+  width: 123px;
+  background-color: #DDDDDD;
+  font-family: "Bitter", serif;
+  font-weight: 700;
+  font-style: bold;
+  size: 18px;
+  padding-top: 13px;
+  padding-left: 15px;
+  color: #363f48;
+}
+
+.twoColumnsDiv .sidebar .social .socialNetwork .numberOfPeople {
+  width: 142px;
+  background-color: #4D4382;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: white;
+}
+
+.twoColumnsDiv .sidebar .kenazTv {
+  height: 324px;
+  background-color: #fff;
+  margin-top: 10px;
+}
+
+.twoColumnsDiv .sidebar .kenazTv h3 {
+  font-family: "Bitter", serif;
+  font-size: 24px;
+  margin-top: 15px;
+  margin-left: 33px;
+  margin-bottom: 31px;
+}
+
+.twoColumnsDiv .sidebar .kenazTv p {
+  font-family: "Varela Round", sans-serif;
+  font-size: 12px;
+  color: #666666;
+  margin-left: 32px;
+  margin-top: 17px;
+  margin-bottom: 7px;
+}
+
+.twoColumnsDiv .sidebar .kenazTv h4 {
+  font-family: "Bitter", serif;
+  font-size: 14px;
+  margin-left: 32px;
+  letter-spacing: 0.5px;
+}
+
+.twoColumnsDiv .sidebar .twoBanners {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 9px;
+  margin-top: 18px;
+  width: 100%;
+  height: 167px;
+  background-color: #DDDDDD;
+  padding-top: 19px;
+  padding-left: 21px;
+}
+
+.twoColumnsDiv .sidebar .twoBanners div {
+  width: 128px;
+  height: 128px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #d7d7d7;
+}
+
+.twoColumnsDiv .sidebar .twoBanners div p {
+  color: #999999;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.twoColumnsDiv .sidebar .commentsSection {
+  width: 100%;
+  height: 556px;
+  background-color: white;
+  margin-top: 22px;
+  padding-top: 15px;
+  padding-left: 17px;
+}
+
 @media screen and (max-width: 950px) {
+  .twoColumnsDiv {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sectionArticles {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .section {
+    width: 340px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+  }
+  .containerLocalNews {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .sectionBusiness {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+  }
+}
+
+@media screen and (max-width: 680px) {
   .twoColumnsDiv {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .twoColumnsDiv .sidebar {
-    margin: 0 auto;
-  }
-  .twoColumnsDiv .newsbar {
+  .sidebar {
     margin: 0 auto;
   }
 }
