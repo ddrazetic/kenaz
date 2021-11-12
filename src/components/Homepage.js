@@ -9,6 +9,7 @@ import Social from "./Social";
 import KenazTv from "./KenazTv";
 import TwoBanners from "./TwoBanners";
 import CommentsSection from "./CommentsSection";
+import SecondSlider from "./SecondSlider";
 const Homepage = () => {
   return (
     <div className="mainContainer">
@@ -54,6 +55,7 @@ const Homepage = () => {
         </div>
       </div>
       <Banner />
+      <SecondSlider />
     </div>
   );
 };
