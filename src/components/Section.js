@@ -11,7 +11,7 @@ const Section = ({ title, colorShadow, numberZero }) => {
         <h3>{title}</h3>
         <a href="https://www.w3schools.com/">See all</a>
       </div>
-      <div className="sectionArticles">
+      <div className="sectionArticles sectionArticlesResp">
         <Article
           date="August 26, 2013"
           number={numberZero ? "14" : ""}

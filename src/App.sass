@@ -473,38 +473,47 @@ h3,h4
             margin-top: 22px
             padding-top: 15px
             padding-left: 17px
-
-.secondSlider
-    margin-bottom: 19px
-    height: 400px
-    width: 100%
-    background: #f59c9c
-
+.secondContainerSlider
     overflow: hidden
-    .imageSlider
-        height: 940px
-    .thumbnailSlider
-        &:hover
-            opacity: 0.6
+    .secondSlider
+        margin-bottom: 19px
+        height: 400px
+        width: 100%
+        background: #f59c9c
 
-    .slick-active
+        overflow: hidden
+        .imageSlider
+            height: 940px
         .thumbnailSlider
-            background-color: white
-            width: 120px
-            padding: 10px
-.searchButton
-    width: 80px
-    position: absolute
-    z-index: 1
-    left: 0
-    right: 0
-    margin-left: auto
-    margin-right: auto
-    margin-top: 170px
-    &:hover
-        opacity: 0.5
-.largePhoto
-    width: 30vw
+
+            &:hover
+                opacity: 0.6
+
+        .slick-active
+            .thumbnailSlider
+                background-color: white
+                width: 120px
+                padding: 10px
+    .searchButton
+        width: 80px
+        position: absolute
+        z-index: 2
+        left: 0
+        right: 0
+        margin-left: auto
+        margin-right: auto
+        margin-top: 170px
+        &:hover
+            opacity: 0.5
+    .largePhoto
+        width: 30vw
+    .blackBackground
+        position: absolute
+        z-index: 1
+
+        height: 218px
+        margin-top: 200px
+        max-width: 99%
 
 //responzivnost
 
@@ -512,6 +521,36 @@ h3,h4
     .twoColumnsDiv
         justify-content: center
 
+    // .sectionArticles
+    //     flex-direction: column !important
+
+    // .section
+    //     width: 340px
+    //     margin: 0 auto
+    //     padding-bottom: 10px
+    // .containerLocalNews
+    //     display: flex
+    //     flex-direction: column !important
+
+    // .sectionBusiness
+    //     grid-template-columns: 1fr !important
+    .twoColumnsDiv
+        flex-direction: column
+    .sidebar
+        margin: 0 auto
+    .section
+        margin: 0 auto
+    .sectionBusi
+        width: 620px
+
+    .thumbnailSlider
+        width: 80px !important
+    .thumbnails
+        gap: 60px !important
+
+@media screen and (max-width: 680px)
+    .mainSlider
+        margin-bottom: 50px
     .sectionArticles
         flex-direction: column !important
 
@@ -525,8 +564,16 @@ h3,h4
 
     .sectionBusiness
         grid-template-columns: 1fr !important
-@media screen and (max-width: 680px)
-    .twoColumnsDiv
-        flex-direction: column
-    .sidebar
-        margin: 0 auto
+
+    .sectionArticlesResp
+        padding-left: 50px
+
+    .thumbnailSlider
+        width: 50px !important
+    .thumbnails
+        gap: 30px !important
+
+    // .twoColumnsDiv
+    //     flex-direction: column
+    // .sidebar
+    //     margin: 0 auto
