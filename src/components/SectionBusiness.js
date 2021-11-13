@@ -3,7 +3,7 @@ import ArticleBusiness from "./ArticleBusiness";
 const SectionBusiness = ({ title, colorShadow, numberZero }) => {
   return (
     <div
-      className="section sectionNews"
+      className="section sectionBusi"
       style={{ borderLeftColor: colorShadow }}
     >
       <div className="sectionHeader">

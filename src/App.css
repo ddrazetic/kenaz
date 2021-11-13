@@ -735,11 +735,91 @@ h3, h4 {
   padding-left: 17px;
 }
 
+.secondContainerSlider {
+  overflow: hidden;
+}
+
+.secondContainerSlider .secondSlider {
+  margin-bottom: 19px;
+  height: 400px;
+  width: 100%;
+  background: #f59c9c;
+  overflow: hidden;
+}
+
+.secondContainerSlider .secondSlider .imageSlider {
+  height: 940px;
+}
+
+.secondContainerSlider .secondSlider .thumbnailSlider:hover {
+  opacity: 0.6;
+}
+
+.secondContainerSlider .secondSlider .slick-active .thumbnailSlider {
+  background-color: white;
+  width: 120px;
+  padding: 10px;
+}
+
+.secondContainerSlider .searchButton {
+  width: 80px;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 170px;
+}
+
+.secondContainerSlider .searchButton:hover {
+  opacity: 0.5;
+}
+
+.secondContainerSlider .largePhoto {
+  width: 30vw;
+}
+
+.secondContainerSlider .blackBackground {
+  position: absolute;
+  z-index: 1;
+  height: 218px;
+  margin-top: 200px;
+  max-width: 99%;
+}
+
 @media screen and (max-width: 950px) {
   .twoColumnsDiv {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .twoColumnsDiv {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sidebar {
+    margin: 0 auto;
+  }
+  .section {
+    margin: 0 auto;
+  }
+  .sectionBusi {
+    width: 620px;
+  }
+  .thumbnailSlider {
+    width: 80px !important;
+  }
+  .thumbnails {
+    gap: 60px !important;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .mainSlider {
+    margin-bottom: 50px;
   }
   .sectionArticles {
     -webkit-box-orient: vertical !important;
@@ -765,17 +845,14 @@ h3, h4 {
     -ms-grid-columns: 1fr !important;
         grid-template-columns: 1fr !important;
   }
-}
-
-@media screen and (max-width: 680px) {
-  .twoColumnsDiv {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .sectionArticlesResp {
+    padding-left: 50px;
   }
-  .sidebar {
-    margin: 0 auto;
+  .thumbnailSlider {
+    width: 50px !important;
+  }
+  .thumbnails {
+    gap: 30px !important;
   }
 }
 /*# sourceMappingURL=App.css.map */
