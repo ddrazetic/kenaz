@@ -8,7 +8,15 @@
   margin: 0px;
 }
 
-h3, h4 {
+h3 {
+  color: #363f48;
+  font-family: "Bitter", serif;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+h4 {
   color: #363f48;
 }
 
@@ -189,22 +197,6 @@ h3, h4 {
   margin-top: auto;
 }
 
-@media screen and (max-width: 780px) {
-  .purpleNav ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin: 0 auto;
-  }
-  .navigation {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
 .mainContainer {
   max-width: 940px;
   margin: 0 auto;
@@ -232,7 +224,7 @@ h3, h4 {
 
 .banner p {
   color: #999999;
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
   font-size: 14px;
   line-height: 17px;
 }
@@ -250,7 +242,7 @@ h3, h4 {
 
 .mainSlider .item {
   min-height: 425px;
-  background-image: url("./components/assets/news_photo.png");
+  background-image: url("../components/assets/news_photo.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -260,7 +252,7 @@ h3, h4 {
 }
 
 .mainSlider .item .dateAndComments {
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
@@ -287,7 +279,7 @@ h3, h4 {
 }
 
 .mainSlider .item h1 {
-  font-family: 'Bitter', serif;
+  font-family: "Bitter", serif;
   color: #EEF6FA;
   font-weight: 700;
   font-size: 34px;
@@ -302,7 +294,7 @@ h3, h4 {
   background: rgba(0, 0, 0, 0.0001);
   border: solid #fff 1px;
   line-height: 17px;
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
   color: #EEF6FA;
 }
 
@@ -311,7 +303,8 @@ h3, h4 {
   z-index: 999;
   width: 36px;
   height: 53px;
-  background: url("./components/assets/arrowLeft.png") no-repeat !important;
+  cursor: pointer;
+  background: url("../components/assets/arrowLeft.png") no-repeat !important;
 }
 
 .slick-prev::before {
@@ -326,8 +319,9 @@ h3, h4 {
   right: 25px;
   width: 36px;
   height: 53px;
+  cursor: pointer;
   z-index: 999;
-  background: url("./components/assets/arrowRight.png") no-repeat !important;
+  background: url("../components/assets/arrowRight.png") no-repeat !important;
 }
 
 .slick-next::before {
@@ -409,11 +403,6 @@ h3, h4 {
 }
 
 .twoColumnsDiv .newsbar .section .sectionHeader h3 {
-  font-family: "Bitter", serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 24px;
-  line-height: 29px;
   margin-top: 15px;
   margin-left: 31px;
 }
@@ -424,6 +413,7 @@ h3, h4 {
   line-height: 17px;
   color: #3677B5;
   margin-left: auto;
+  text-underline-offset: 3px;
   margin-top: 32px;
   -webkit-text-decoration-color: rgba(54, 119, 181, 0.3);
           text-decoration-color: rgba(54, 119, 181, 0.3);
@@ -444,6 +434,10 @@ h3, h4 {
 
 .twoColumnsDiv .newsbar .section .sectionArticles .article {
   width: 170px;
+}
+
+.twoColumnsDiv .newsbar .section .sectionArticles .article:hover {
+  opacity: 0.8;
 }
 
 .twoColumnsDiv .newsbar .section .sectionArticles .article img {
@@ -616,11 +610,8 @@ h3, h4 {
 }
 
 .twoColumnsDiv .sidebar .social h3 {
-  font-family: "Bitter", serif;
-  font-size: 24px;
   line-height: 24px;
   margin-bottom: 15px;
-  color: #363f48;
 }
 
 .twoColumnsDiv .sidebar .social .socialNetwork {
@@ -663,8 +654,6 @@ h3, h4 {
 }
 
 .twoColumnsDiv .sidebar .kenazTv h3 {
-  font-family: "Bitter", serif;
-  font-size: 24px;
   margin-top: 15px;
   margin-left: 33px;
   margin-bottom: 31px;
@@ -736,15 +725,15 @@ h3, h4 {
 }
 
 .secondContainerSlider {
-  overflow: hidden;
+  overflow: hidden !important;
+  position: relative;
 }
 
 .secondContainerSlider .secondSlider {
-  margin-bottom: 19px;
   height: 400px;
   width: 100%;
   background: #f59c9c;
-  overflow: hidden;
+  overflow: hidden !important;
 }
 
 .secondContainerSlider .secondSlider .imageSlider {
@@ -777,15 +766,146 @@ h3, h4 {
 }
 
 .secondContainerSlider .largePhoto {
-  width: 30vw;
+  width: 40vh;
 }
 
 .secondContainerSlider .blackBackground {
   position: absolute;
+  left: 0;
   z-index: 1;
-  height: 218px;
-  margin-top: 200px;
-  max-width: 99%;
+  height: 228px;
+  bottom: 0;
+  max-width: 100%;
+}
+
+footer {
+  width: 100%;
+  min-height: 992px;
+  background: #252525;
+  margin-top: 19px;
+  border-top: solid 23px #4D4382;
+}
+
+footer .threeColumnFooter {
+  max-width: 940px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 18px;
+}
+
+footer .threeColumnFooter .columnFooter {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .threeColumnFooter .columnFooter .logoFooter {
+  margin-top: 47px;
+}
+
+footer .threeColumnFooter .columnFooter .logoFooter img {
+  float: left;
+  margin-right: 18px;
+}
+
+footer .threeColumnFooter .columnFooter .logoFooter h3 {
+  color: #45B0E3;
+  font-size: 29.6px;
+  line-height: 41.81px;
+}
+
+footer .threeColumnFooter .columnFooter p {
+  font-family: "Bitter", serif;
+  color: #666666;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 23px 0;
+}
+
+footer .threeColumnFooter .columnFooter .logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 6px;
+}
+
+footer .threeColumnFooter .columnFooter .logos img {
+  height: 38px;
+  width: 38px;
+}
+
+footer .threeColumnFooter .columnFooter-second {
+  margin-top: 60px;
+}
+
+footer .threeColumnFooter .columnFooter-second h3 {
+  color: #cccccc;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+footer .threeColumnFooter .columnFooter-second .inputFooter {
+  width: 193px;
+  float: left;
+  background: #333333;
+  height: 53px;
+  border: none;
+  font-family: "Varela Round", sans-serif;
+  font-size: 16px;
+  padding-left: 21px;
+}
+
+footer .threeColumnFooter .columnFooter-second button {
+  height: 53px;
+  background-color: #4D4382;
+  border: none;
+  width: 107px;
+  color: #CCCCCC;
+  font-family: "Varela Round", sans-serif;
+  font-size: 16px;
+}
+
+footer .threeColumnFooter .columnFooter-third {
+  margin-top: 60px;
+}
+
+footer .threeColumnFooter .columnFooter-third h3 {
+  color: #cccccc;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+footer .threeColumnFooter .columnFooter-third .tagsFooter {
+  font-family: "Varela Round", sans-serif;
+  font-size: 12px;
+  line-height: 29px;
+}
+
+footer .threeColumnFooter .columnFooter-third .tagsFooter strong {
+  background-color: #4D4382;
+  padding: 6px 9px;
+  margin: 0 2px;
+  color: #cccccc;
+  font-weight: normal;
+}
+
+footer .threeColumnFooter .columnFooter-third .tagsFooter span {
+  padding: 6px 9px;
+  margin: 0 2px;
+  background-color: #333333;
 }
 
 @media screen and (max-width: 950px) {
@@ -793,8 +913,6 @@ h3, h4 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  .twoColumnsDiv {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -802,6 +920,9 @@ h3, h4 {
   }
   .sidebar {
     margin: 0 auto;
+  }
+  .newsbar {
+    margin-right: 0 !important;
   }
   .section {
     margin: 0 auto;
@@ -814,10 +935,35 @@ h3, h4 {
   }
   .thumbnails {
     gap: 60px !important;
+    margin-top: 50px;
+  }
+  .threeColumnFooter {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .threeColumnFooter .columnFooter {
+    margin: 0 auto !important;
+    padding: 0 10px;
+    max-width: 350px;
   }
 }
 
 @media screen and (max-width: 680px) {
+  .purpleNav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+  }
+  .navigation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .mainSlider {
     margin-bottom: 50px;
   }
@@ -849,10 +995,11 @@ h3, h4 {
     padding-left: 50px;
   }
   .thumbnailSlider {
-    width: 50px !important;
+    width: 45px !important;
   }
   .thumbnails {
-    gap: 30px !important;
+    gap: 20px !important;
+    margin-top: 70px;
   }
 }
 /*# sourceMappingURL=App.css.map */

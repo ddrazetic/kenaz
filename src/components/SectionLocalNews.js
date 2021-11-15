@@ -28,8 +28,18 @@ const SectionLocalNews = ({ title, colorShadow, numberZero, width }) => {
       <div className="sectionHeader">
         <h3>{title}</h3>
         <div>
-          <img onClick={previous} src={arrowLeft} alt="previous"></img>
-          <img onClick={next} src={arrowRight} alt="next"></img>
+          <img
+            style={{ cursor: "pointer" }}
+            onClick={previous}
+            src={arrowLeft}
+            alt="previous"
+          ></img>
+          <img
+            style={{ cursor: "pointer" }}
+            onClick={next}
+            src={arrowRight}
+            alt="next"
+          ></img>
         </div>
       </div>
       <div className="sectionArticles">
