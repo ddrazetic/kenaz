@@ -1,15 +1,18 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 import comments from "./assets/comment ico.png";
+import { Link } from "react-router-dom";
 
 export default class MainSlider extends Component {
   render() {
     const settings = {
       dots: false,
       infinite: true,
-      speed: 500,
+      speed: 1000,
       slidesToShow: 1,
       slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 4000,
     };
     return (
       <div className="mainSlider">
@@ -21,7 +24,8 @@ export default class MainSlider extends Component {
               <p>22 Comments</p>
             </div>
             <h1>'Margot' breathlessly reimagines Anne Frank's sister</h1>
-            <button>Read article</button>
+
+            <Link to="/single">Read article</Link>
           </div>
           <div className="item">
             <div className="dateAndComments">
@@ -30,7 +34,8 @@ export default class MainSlider extends Component {
               <p>22 Comments</p>
             </div>
             <h1>'Margot' breathlessly reimagines Anne Frank's sister</h1>
-            <button>Read article</button>
+
+            <Link to="/single">Read article</Link>
           </div>
           <div className="item">
             <div className="dateAndComments">
@@ -39,7 +44,8 @@ export default class MainSlider extends Component {
               <p>22 Comments</p>
             </div>
             <h1>'Margot' breathlessly reimagines Anne Frank's sister</h1>
-            <button>Read article</button>
+
+            <Link to="/single">Read article</Link>
           </div>
         </Slider>
       </div>

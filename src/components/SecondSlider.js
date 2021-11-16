@@ -22,6 +22,21 @@ const photos = {
   photo7: photo7,
 };
 
+const getPhotos = () => {
+  let i;
+  let a = [];
+  for (i = 0; i < 7; i++) {
+    a[i] = (
+      <img
+        key={i}
+        src={photos[Object.keys(photos)[i]]}
+        alt="sliderphotos"
+      ></img>
+    );
+  }
+  return a;
+};
+
 const openPopupbox = (c) => {
   const content = (
     <div style={{ display: "flex", justifyContent: "center" }}>
@@ -114,7 +129,8 @@ const SecondSlider = () => {
         //ref={(c) => (slider.current = c)}
         {...settings}
       >
-        <div>
+        {getPhotos()}
+        {/* <div>
           <img className="imageSlider" src={photo1} alt=" slider"></img>
         </div>
         <div>
@@ -134,7 +150,7 @@ const SecondSlider = () => {
         </div>
         <div>
           <img className="imageSlider" src={photo7} alt=" slider"></img>
-        </div>
+        </div> */}
       </Slider>
     </div>
   );
