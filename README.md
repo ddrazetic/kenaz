@@ -1,3 +1,3 @@
-Press on Kenaz to go to /home
-Press on See all to go to /category
-Press on Read article to go to /single
+Press on <strong>Kenaz</strong> to go to /home </br>
+Press on <strong>See all</strong> to go to /category </br>
+Press on <strong>Read article</strong> to go to /single </br>
