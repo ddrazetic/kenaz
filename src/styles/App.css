@@ -869,6 +869,10 @@ h4 {
   margin-top: 16px;
 }
 
+.category .sectionCategory .articleCategory .readArticle:hover {
+  opacity: 0.7;
+}
+
 .category .sectionCategory .grayLineCategory {
   width: 100%;
   height: 1px;
@@ -914,6 +918,79 @@ h4 {
   height: 17px;
   width: 100%;
   background-color: #eeeeee;
+}
+
+.singleTitle {
+  margin-top: 18px;
+  margin-bottom: 7px;
+  width: 100%;
+  max-height: 100%;
+  position: relative;
+  color: #222222;
+}
+
+.singleTitle .singleHeader {
+  max-height: 100%;
+  width: 100%;
+}
+
+.singleTitle .singleHeader-layer {
+  max-height: 258px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.singleTitle p {
+  position: absolute;
+  bottom: 154px;
+  left: 30px;
+  font-family: "Varela Round", sans-serif;
+  font-size: 12px;
+  line-height: 14.5px;
+}
+
+.singleTitle h1 {
+  position: absolute;
+  bottom: 34px;
+  left: 30px;
+  font-family: "Bitter", serif;
+  font-size: 44px;
+  line-height: 53px;
+  letter-spacing: 1.5px;
+  max-width: 750px;
+}
+
+.singlebar {
+  max-width: 620px;
+  margin-right: 17px;
+  margin-top: 19px;
+}
+
+.singlebar .sectionSingleBar {
+  background-color: white;
+}
+
+.singlebar .sectionSingleBar img {
+  width: 100%;
+  margin-top: 42px;
+}
+
+.singlebar .sectionSingleBar p {
+  margin-left: 30px;
+  padding-top: 37px;
+  margin-right: 20px;
+  font-family: "Bitter", serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: #444444;
+  letter-spacing: 0.23px;
+}
+
+.singlebar .sectionSingleBar .tweetImage {
+  padding-left: 15px;
+  margin-bottom: 18px;
 }
 
 footer {
@@ -1210,6 +1287,17 @@ footer .bottomFooter .leftP {
   .category {
     margin: 0 auto;
   }
+  .singleTitle h1 {
+    font-size: 30px;
+    line-height: normal;
+    padding-right: 30px;
+  }
+  .singleTitle p {
+    bottom: 110px;
+  }
+  .singlebar {
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 680px) {
@@ -1274,6 +1362,21 @@ footer .bottomFooter .leftP {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .category {
+    width: 330px !important;
+  }
+  .buttonsCategory {
+    margin-left: 0px !important;
+  }
+  .singleTitle h1 {
+    font-size: 15px;
+    bottom: 0;
+    line-height: normal;
+    padding-right: 30px;
+  }
+  .singleTitle p {
+    bottom: 45px;
   }
 }
 
