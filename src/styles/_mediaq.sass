@@ -38,6 +38,12 @@
             padding: 0 10px
             max-width: 350px
         .columnFooter-third
+    .bottomFooter
+        flex-direction: column
+        p
+            margin: 0 auto !important
+    .category
+        margin: 0 auto
 
 @media screen and (max-width: 680px)
     .purpleNav ul
@@ -47,6 +53,10 @@
         flex-direction: column
     .mainSlider
         margin-bottom: 50px
+    .item
+        min-height: 460px !important
+    .dateAndComments
+        margin-top: 256px !important
     .sectionArticles
         flex-direction: column !important
 
@@ -70,8 +80,19 @@
     .thumbnails
         gap: 20px !important
         margin-top: 70px
+    .articleCategory
+        flex-direction: column
 
     // .twoColumnsDiv
     //     flex-direction: column
     // .sidebar
     //     margin: 0 auto
+
+// za popup sliku 
+@media all and (orientation: landscape)
+    .largePhoto
+        height: 70vh
+
+@media all and (orientation: portrait)
+    .largePhoto
+        width: 70vw

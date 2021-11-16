@@ -1,5 +1,6 @@
 import React from "react";
 import Article from "./Article";
+import { Link } from "react-router-dom";
 
 const Section = ({ title, colorShadow, numberZero }) => {
   return (
@@ -9,7 +10,7 @@ const Section = ({ title, colorShadow, numberZero }) => {
     >
       <div className="sectionHeader">
         <h3>{title}</h3>
-        <a href="https://www.w3schools.com/">See all</a>
+        <Link to="/category">See all</Link>
       </div>
       <div className="sectionArticles sectionArticlesResp">
         <Article

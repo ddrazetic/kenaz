@@ -26,7 +26,13 @@ const getPhotos = () => {
   let i;
   let a = [];
   for (i = 0; i < 7; i++) {
-    a[i] = <img src={photos[Object.keys(photos)[i]]} alt="sliderphotos"></img>;
+    a[i] = (
+      <img
+        key={i}
+        src={photos[Object.keys(photos)[i]]}
+        alt="sliderphotos"
+      ></img>
+    );
   }
   return a;
 };
