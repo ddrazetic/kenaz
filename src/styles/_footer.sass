@@ -7,8 +7,7 @@ footer
     .threeColumnFooter
         max-width: 940px
         margin: 0 auto
-        display: flex
-        flex-direction: row
+        @include flex-row
         gap: 18px
         .columnFooter
             flex: 1
@@ -47,12 +46,10 @@ footer
                     background-color: rgba(102, 102, 102, 0.2)
 
                 .article
-                    display: flex
-                    flex-direction: row
+                    @include flex-row
                     .articleText
                         .articleDate
-                            display: flex
-                            flex-direction: row
+                            @include flex-row
                             gap: 120px
                             p
                                 margin-top: 0px

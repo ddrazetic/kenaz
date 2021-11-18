@@ -12,8 +12,7 @@
         margin: 0 auto
         display: flex
         .leftPartNav
-            display: flex
-            flex-direction: row
+            @include flex-row
             .leftArrowNav
                 height: 53px
                 width: 63px
@@ -39,8 +38,7 @@
             display: flex
             ul
                 list-style-type: none
-                display: flex
-                flex-direction: row
+                @include flex-row
                 margin-top: 14.5px
                 font-size: 14px
                 color: #fff
@@ -64,8 +62,7 @@
     background-color: #4D4382
     ul
         list-style-type: none
-        display: flex
-        flex-direction: row
+        @include flex-row
         font-family: 'Bitter', serif
         font-weight: 700
         font-size: 18px
@@ -81,35 +78,25 @@
             background-color: #299EC3
             padding: 15px 21px 16px 20px
         li:nth-child(2)::after
-            content: ''
+            @include navAtribute
             width: 132px
-            height: 3px
             background-color: #EE6151
-            margin-top: auto
         li:nth-child(3)::after
-            content: ''
+            @include navAtribute
             width: 100px
-            height: 3px
             background-color: #84C14F
-            margin-top: auto
         li:nth-child(4)::after
-            content: ''
+            @include navAtribute
             width: 81px
-            height: 3px
             background-color: #5DCFF3
-            margin-top: auto
         li:nth-child(5)::after
-            content: ''
+            @include navAtribute
             width: 91px
-            height: 3px
             background-color: #FCC44D
-            margin-top: auto
         li:nth-child(6)::after
-            content: ''
+            @include navAtribute
             width: 113px
-            height: 3px
             background-color: #A99765
-            margin-top: auto
 
 .hiddenHamburger
     display: none
