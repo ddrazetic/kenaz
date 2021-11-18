@@ -49,10 +49,13 @@
         flex-direction: column
     .mainSlider
         margin-bottom: 50px
-    .item
-        min-height: 460px !important
-    .dateAndComments
-        margin-top: 256px !important
+        .item
+            min-height: 460px !important
+            .dateAndComments
+                margin-top: 276px !important
+            h1
+                font-size: 24px
+                line-height: normal
     .sectionArticles
         flex-direction: column !important
 
@@ -91,6 +94,18 @@
             padding-right: 30px
         p
             bottom: 45px
+    .author
+        flex-direction: column
+        img
+            margin: 0 auto
+    .authorName
+        flex-direction: column
+
+    .hiddenHamburger
+        display: block
+
+    .hidden
+        display: none !important
 
 // za popup sliku 
 @media all and (orientation: landscape)

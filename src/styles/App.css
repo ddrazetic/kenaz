@@ -26,6 +26,14 @@ h4 {
   min-height: 53px;
 }
 
+.containerNav .navigationClose {
+  max-width: 940px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .containerNav .navigation {
   max-width: 940px;
   margin: 0 auto;
@@ -203,6 +211,10 @@ h4 {
   height: 3px;
   background-color: #A99765;
   margin-top: auto;
+}
+
+.hiddenHamburger {
+  display: none;
 }
 
 .mainContainer {
@@ -993,6 +1005,140 @@ h4 {
   margin-bottom: 18px;
 }
 
+.singlebar .aboutauthor {
+  margin-top: 16px;
+  background-color: white;
+  padding-top: 18px;
+  padding-left: 31px;
+  padding-right: 26px;
+  padding-bottom: 31px;
+}
+
+.singlebar .aboutauthor .author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.singlebar .aboutauthor .author img {
+  height: 110px;
+  width: 110px;
+}
+
+.singlebar .aboutauthor .author p {
+  font-family: "Varela Round", sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  color: #444444;
+}
+
+.singlebar .singleComments {
+  margin-top: 18px;
+  background-color: white;
+  padding-top: 15px;
+  padding-left: 32px;
+  padding-right: 31px;
+  padding-bottom: 30px;
+}
+
+.singlebar .singleComments .profileComment {
+  margin-top: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+}
+
+.singlebar .singleComments .profileComment img {
+  width: 58px;
+  height: 58px;
+}
+
+.singlebar .singleComments .profileComment .textComment .authorName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.singlebar .singleComments .profileComment .textComment .authorName h4 {
+  font-family: "Bitter", serif;
+  font-size: 18px;
+  line-height: 20px;
+  color: #4D4382;
+  letter-spacing: 1px;
+}
+
+.singlebar .singleComments .profileComment .textComment .authorName .dateComment {
+  font-family: "Varela Round", sans-serif;
+  font-size: 11px;
+  line-height: 26px;
+  margin-left: 8px;
+  color: #666;
+}
+
+.singlebar .singleComments .profileComment .textComment .authorName .replyToComment {
+  font-family: "Varela Round", sans-serif;
+  margin-left: auto;
+  color: #4d4382;
+}
+
+.singlebar .singleComments .profileComment .textComment p {
+  font-family: "Varela Round", sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  color: #444;
+}
+
+.singlebar .addComment {
+  margin-top: 34px;
+}
+
+.singlebar .addComment p {
+  margin-top: 26.5px;
+  margin-bottom: 25.5px;
+  font-family: "Varela Round", sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  color: #444;
+}
+
+.singlebar .addComment input {
+  border: none;
+  background-color: #ddd;
+  display: block;
+  margin-bottom: 8px;
+  font-family: "Varela Round", sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  color: #666;
+  padding-left: 18px;
+}
+
+.singlebar .addComment .nameEmail {
+  width: 303px;
+  height: 43px;
+}
+
+.singlebar .addComment .inputComment {
+  width: 100%;
+  height: 187px;
+}
+
+.singlebar .addComment button {
+  border: none;
+  background: #4d4382;
+  margin-top: 10px;
+  width: 153px;
+  height: 53px;
+  font-family: "Varela Round", sans-serif;
+  color: white;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+}
+
 footer {
   width: 100%;
   min-height: 880px;
@@ -1317,11 +1463,15 @@ footer .bottomFooter .leftP {
   .mainSlider {
     margin-bottom: 50px;
   }
-  .item {
+  .mainSlider .item {
     min-height: 460px !important;
   }
-  .dateAndComments {
-    margin-top: 256px !important;
+  .mainSlider .item .dateAndComments {
+    margin-top: 276px !important;
+  }
+  .mainSlider .item h1 {
+    font-size: 24px;
+    line-height: normal;
   }
   .sectionArticles {
     -webkit-box-orient: vertical !important;
@@ -1377,6 +1527,27 @@ footer .bottomFooter .leftP {
   }
   .singleTitle p {
     bottom: 45px;
+  }
+  .author {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .author img {
+    margin: 0 auto;
+  }
+  .authorName {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hiddenHamburger {
+    display: block;
+  }
+  .hidden {
+    display: none !important;
   }
 }
 
