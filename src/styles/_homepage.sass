@@ -42,8 +42,7 @@
             font-size: 12px
             line-height: 14px
             color: #EEF6FA
-            display: flex
-            flex-direction: row
+            @include flex-row
             margin-top: 246px
             margin-bottom: 10px
             p
@@ -101,8 +100,7 @@
 
 //sekcije
 .twoColumnsDiv
-    display: flex
-    flex-direction: row
+    @include flex-row
     .newsbar
         display: flex
         flex-direction: column
@@ -110,8 +108,7 @@
         max-width: 100%
         overflow: hidden
         .containerLocalNews
-            display: flex
-            flex-direction: row
+            @include flex-row
             gap: 24px !important
         .section
             overflow: hidden
@@ -213,8 +210,7 @@
             .topPopularHeader
                 padding-top: 18px
                 padding-bottom: 21px
-                display: flex
-                flex-direction: row
+                @include flex-row
                 justify-content: center
                 gap: 20px
                 font-family: $varelaFont
