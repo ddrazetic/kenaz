@@ -1,13 +1,17 @@
 import leftArrow from "./assets/VectorSmartObject.png";
 import search from "./assets/search 2.png";
 import { Link } from "react-router-dom";
-import React, { useLayoutEffect } from "react";
+import React, { useLayoutEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
+
+import Hamburger from "hamburger-react";
 const Header = () => {
   const location = useLocation();
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
   }, [location.pathname]);
+
+  const [isBoxVisible, setState] = useState(0);
   return (
     <header>
       <div className="containerNav">
@@ -34,7 +38,15 @@ const Header = () => {
       </div>
 
       <div className="containerNav purpleNav">
-        <div className="navigation">
+        <div className="hiddenHamburger">
+          <Hamburger
+            className="hamburgerIcon"
+            toggled={isBoxVisible}
+            toggle={setState}
+          />
+        </div>
+
+        <div className={`navigationClose ${isBoxVisible ? "" : "hidden"}`}>
           <ul>
             <li>News</li>
             <li>Business</li>

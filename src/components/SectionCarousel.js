@@ -4,12 +4,7 @@ import ArticleCarousel from "./ArticleCarousel";
 import arrowLeft from "./assets/arrowLeftYellow.png";
 import arrowRight from "./assets/arrowRightYellow.png";
 
-const SectionCarousel = ({
-  title,
-  colorShadow,
-  numberZero,
-  numberArticles,
-}) => {
+const SectionCarousel = ({ title, colorShadow, numberZero }) => {
   const slider = useRef();
   const next = () => {
     slider.current.slickNext();

@@ -60,7 +60,6 @@ const openPopupbox = (c) => {
 };
 
 const SecondSlider = () => {
-  //const slider = useRef();
   const [countt, setCountt] = useState(0);
 
   const settings = {
@@ -124,33 +123,8 @@ const SecondSlider = () => {
         alt="black background"
         src={blackBackground}
       ></img>
-      <Slider
-        className="secondSlider"
-        //ref={(c) => (slider.current = c)}
-        {...settings}
-      >
+      <Slider className="secondSlider" {...settings}>
         {getPhotos()}
-        {/* <div>
-          <img className="imageSlider" src={photo1} alt=" slider"></img>
-        </div>
-        <div>
-          <img className="imageSlider" src={photo2} alt=" slider"></img>
-        </div>
-        <div>
-          <img className="imageSlider" src={photo3} alt="slider"></img>
-        </div>
-        <div>
-          <img className="imageSlider" src={photo4} alt=" slider"></img>
-        </div>
-        <div>
-          <img className="imageSlider" src={photo5} alt=" slider"></img>
-        </div>
-        <div>
-          <img className="imageSlider" src={photo6} alt=" slider"></img>
-        </div>
-        <div>
-          <img className="imageSlider" src={photo7} alt=" slider"></img>
-        </div> */}
       </Slider>
     </div>
   );
