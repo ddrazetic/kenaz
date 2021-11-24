@@ -1,16 +1,15 @@
 import "./styles/App.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import MainSlider from "./components/MainSlider";
-import SecondSlider from "./components/SecondSlider";
-import Newsbar from "./components/Newsbar";
-import Sidebar from "./components/Sidebar";
-import Banner from "./components/Banner";
-
+import Header from "./components/header_footer_components/Header";
+import Footer from "./components/header_footer_components/Footer";
+import MainSlider from "./components/slider_components/MainSlider";
+import SecondSlider from "./components/slider_components/SecondSlider";
+import Newsbar from "./components/homepage_components/Newsbar";
+import Sidebar from "./components/sidebar_components/Sidebar";
+import Banner from "./components/homepage_components/Banner";
+import Category from "./components/category_components/Category";
+import SingleTitle from "./components/single_components/SingleTitle";
+import Singlebar from "./components/single_components/Singlebar";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Category from "./components/Category";
-import SingleTitle from "./components/SingleTitle";
-import Singlebar from "./components/Singlebar";
 const App = () => {
   return (
     <Router>
